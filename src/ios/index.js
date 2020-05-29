@@ -76,15 +76,15 @@ const iosDevices = async () => {
 
 }
 
-// "sim:11:stage": "ENVFILE=.env.stage react-native run-ios --scheme companion-stage --simulator=\"iPhone 11\"",
-// "sim:11:standalone": "ENVFILE=.env.prod react-native run-ios --scheme companion-prod --simulator=\"iPhone 11\" --configuration Release",
+// "sim:11:stage": "ENVFILE=.env.stage react-native run-ios --scheme app-stage --simulator=\"iPhone 11\"",
+// "sim:11:standalone": "ENVFILE=.env.prod react-native run-ios --scheme app-prod --simulator=\"iPhone 11\" --configuration Release",
 const build = async ({ env, debug, device }) => {
   let spinner;
   try {
     spinner = ora({ text: `Building iOS ${device} ${env}\n`, spinner: 'bouncingBar', color: 'green' })
     spinner.start()
     const configuration = debug ? '' : '--configuration Release'
-    const command = `ENVFILE=.env.${env} react-native run-ios --scheme companion-${env} --simulator="${device}" ${configuration}`
+    const command = `ENVFILE=.env.${env} react-native run-ios --simulator="${device}" ${configuration}`
     const _debugKey = debug ? 'debug' : 'standalone'
     const key = `${device}-${env}-${_debugKey}`;
     await saveCommand({ key, command })
