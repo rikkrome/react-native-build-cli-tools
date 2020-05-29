@@ -7,13 +7,13 @@ npm i -D @exenode/react-native-build-cli-tools
 
 ### Run
 ```
-rn-build-cli simulatorPrompt
+npx rn-build-cli simulatorPrompt
 
 ```
 
 ### Setup a package.json script
 ```
   "scripts": {
-    "sim": "rn-build-cli simulatorPrompt",
+    "sim": "npx rn-build-cli simulatorPrompt",
   },
 ```
