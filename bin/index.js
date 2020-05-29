@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const yargs = require("yargs");
-const jestTools = require("./src/jestTools");
-const simulator = require("./src/simulator");
+const jestTools = require("../src/jestTools");
+const simulator = require("../src/simulator");
 
 const argv = yargs
   .command("jestPrompt", "running test promp for jest", () => {

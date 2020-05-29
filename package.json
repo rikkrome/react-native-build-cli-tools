@@ -1,11 +1,24 @@
 {
-  "name": "cli",
+  "name": "@exenode/react-native-build-cli-tools",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "@exeNode/react-native-build-cli-tools": "bin/index.js",
+    "rn-build-cli": "bin/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "react-native",
+    "build",
+    "cli",
+    "tools"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
