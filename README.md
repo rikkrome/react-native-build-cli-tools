@@ -7,7 +7,7 @@ This cli tool helps you run your React-Native simulator. Supports both iOS and A
 
 ## Installation
 ```bash
-npm i -D @exenode/react-native-build-cli-tools
+npm i -D @romerorickyio/react-native-build-cli-tools
 ```
 
 ### Command line usage
