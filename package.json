@@ -1,14 +1,14 @@
 {
-  "name": "@exenode/react-native-build-cli-tools",
+  "name": "@romerorickyio/react-native-build-cli-tools",
   "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
-    "@exeNode/react-native-build-cli-tools": "bin/index.js",
+    "@romerorickyio/react-native-build-cli-tools": "bin/index.js",
     "rn-build-cli": "bin/index.js"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
