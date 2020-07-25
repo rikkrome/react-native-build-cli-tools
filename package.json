@@ -1,6 +1,6 @@
 {
   "name": "@romerorickyio/react-native-build-cli-tools",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,12 @@
     "rn-build-cli": "bin/index.js"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/romerorickyio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:romerorickyio/react-native-build-cli-tools.git",
+    "directory": "@romerorickyio/react-native-build-cli-tools"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
