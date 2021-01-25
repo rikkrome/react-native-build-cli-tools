@@ -2,10 +2,9 @@
   "name": "@romerorickyio/react-native-build-cli-tools",
   "version": "1.0.6",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "bin": {
-    "@romerorickyio/react-native-build-cli-tools": "bin/index.js",
-    "rn-build-cli": "bin/index.js"
+    "sim": "bin/index.js"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/romerorickyio"
@@ -16,7 +15,9 @@
     "directory": "@romerorickyio/react-native-build-cli-tools"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "debug": "yarn build && node --inspect-brk ./bin/index.js",
+    "lint": "eslint \"**\\*.ts\""
   },
   "keywords": [
     "react-native",
@@ -32,5 +33,13 @@
     "progress": "^2.0.3",
     "prompts": "^2.3.0",
     "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "@types/prompts": "^2.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "typescript": "^4.1.3"
   }
 }
